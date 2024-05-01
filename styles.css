@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.subtitle, .welcome-message {
+    color: #666;
+}
+
+.input-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.show-checkbox {
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.login-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.help-link {
+    margin-top: 20px;
+}
+
+.help-link a {
+    text-decoration: none;
+    color: #007BFF;
+}

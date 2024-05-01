@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page - Network Designer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Network Designer</h1>
+        <p class="subtitle">by McKinsey</p>
+        <p class="welcome-message">Good afternoon, enter your credentials to log in</p>
+
+        <form action="/submit-your-login-form-handler" method="POST">
+            <div class="input-container">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <div class="show-checkbox">
+                    <input type="checkbox" id="show-password"> Show
+                </div>
+            </div>
+
+            <div class="help-link">
+                <a href="#">Need help?</a>
+            </div>
+
+            <button type="submit" class="login-button">Continue</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('show-password').addEventListener('change', function() {
+            var passwordInput = document.getElementById('password');
+            passwordInput.type = this.checked ? 'text' : 'password';
+        });
+    </script>
+</body>
+</html>
